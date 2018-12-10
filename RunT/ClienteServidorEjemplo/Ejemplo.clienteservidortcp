@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clienteservidortcp:Arquitectura xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:clienteservidortcp="http://www.example.org/clienteservidortcp">
+  <computadora puertos="//@puertos.5 //@puertos.0"/>
+  <computadora Tipo="Servidor" puertos="//@puertos.4 //@puertos.1"/>
+  <tarjetadesarrollo Nombre="ArduinoCliente" VelocidadT="9600" puertos="//@puertos.2"/>
+  <tarjetadesarrollo Nombre="ArduinoServidor" VelocidadT="9600" puertos="//@puertos.3"/>
+  <perifericos xsi:type="clienteservidortcp:Actuadores" Nombre="LED1" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Sensores" Nombre="SWITCH1" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Actuadores" Nombre="LED2" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Sensores" Nombre="SWITCH2" Tipo="Digital"/>
+  <puertos Nombre="SerialCliente" puertos="//@puertos.2"/>
+  <puertos Nombre="SerialServidor" puertos="//@puertos.3"/>
+  <puertos Nombre="SerialArduinoCliente" puertos="//@puertos.0"/>
+  <puertos Nombre="SerialArduinoServidor" puertos="//@puertos.1"/>
+  <puertos Nombre="EthernetServidor" Tipo="Ethernet" puertos="//@puertos.5"/>
+  <puertos Nombre="EthernetCliente" Tipo="Ethernet" puertos="//@puertos.4"/>
+</clienteservidortcp:Arquitectura>

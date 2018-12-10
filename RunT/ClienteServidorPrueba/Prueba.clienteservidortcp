@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clienteservidortcp:Arquitectura xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:clienteservidortcp="http://www.example.org/clienteservidortcp" Nombre="Prueba">
+  <computadora puertos="//@puertos.2 //@puertos.1">
+    <interfaz>
+      <elementos Nombre="Switch1"/>
+      <elementos Nombre="Switch2"/>
+    </interfaz>
+    <com Nombre="COM1" Dato=""/>
+    <tcp Puerto="6000" IP="" Dato=""/>
+  </computadora>
+  <computadora Tipo="Servidor" puertos="//@puertos.3 //@puertos.0">
+    <interfaz>
+      <elementos Nombre="Led1"/>
+      <elementos Nombre="Led2"/>
+    </interfaz>
+    <com Nombre="COM1"/>
+    <tcp Puerto="6000" IP="192.168.0.254"/>
+  </computadora>
+  <tarjetadesarrollo Nombre="ArduinoServidor" VelocidadT="11520" puertos="//@puertos.5">
+    <pines xsi:type="clienteservidortcp:Salida" Tipo="Digital" actuadores="//@perifericos.2"/>
+    <pines xsi:type="clienteservidortcp:Salida" Numero="1" Tipo="Digital" actuadores="//@perifericos.3"/>
+    <pines xsi:type="clienteservidortcp:Entrada" Numero="2" sensores="//@perifericos.4"/>
+  </tarjetadesarrollo>
+  <tarjetadesarrollo Nombre="ArduinoCliente" VelocidadT="9600" puertos="//@puertos.4">
+    <pines xsi:type="clienteservidortcp:Entrada" Tipo="Digital" sensores="//@perifericos.0"/>
+    <pines xsi:type="clienteservidortcp:Entrada" Numero="1" Tipo="Digital" sensores="//@perifericos.1"/>
+    <pines xsi:type="clienteservidortcp:Salida" Numero="2" actuadores="//@perifericos.5"/>
+  </tarjetadesarrollo>
+  <perifericos xsi:type="clienteservidortcp:Sensores" Nombre="Switch1" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Sensores" Nombre="Switch2" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Actuadores" Nombre="Led1" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Actuadores" Nombre="Led2" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Sensores" Nombre="AAA" Tipo="Digital"/>
+  <perifericos xsi:type="clienteservidortcp:Actuadores" Nombre="BBB" Tipo="Digital"/>
+  <puertos Nombre="SerialServidor" puertos="//@puertos.5"/>
+  <puertos Nombre="SerialCliente"/>
+  <puertos Nombre="EthernetCliente" Tipo="Ethernet" puertos="//@puertos.3"/>
+  <puertos Nombre="EthernetServidor" Tipo="Ethernet"/>
+  <puertos Nombre="SerialArduinoCliente" puertos="//@puertos.5"/>
+  <puertos Nombre="SerialArduinoServidor"/>
+</clienteservidortcp:Arquitectura>

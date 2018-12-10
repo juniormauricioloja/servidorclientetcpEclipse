@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated clienteservidortcp -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="clienteservidortcp.presentation.ClienteservidortcpModelWizardID"
+            name="%_UI_ClienteservidortcpModelWizard_label"
+            class="clienteservidortcp.presentation.ClienteservidortcpModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/ClienteservidortcpModelFile.gif">
+         <description>%_UI_ClienteservidortcpModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated clienteservidortcp -->
+      <editor
+            id="clienteservidortcp.presentation.ClienteservidortcpEditorID"
+            name="%_UI_ClienteservidortcpEditor_label"
+            icon="icons/full/obj16/ClienteservidortcpModelFile.gif"
+            extensions="clienteservidortcp"
+            class="clienteservidortcp.presentation.ClienteservidortcpEditor"
+            contributorClass="clienteservidortcp.presentation.ClienteservidortcpActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

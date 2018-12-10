@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/clienteservidortcp/src-gen" creationIcons="false"
+    editDirectory="/clienteservidortcp.edit/src-gen" editorDirectory="/clienteservidortcp.editor/src-gen"
+    modelPluginID="clienteservidortcp" modelName="Clienteservidortcp" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>clienteservidortcp.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Clienteservidortcp" disposableProviderFactory="true" ecorePackage="clienteservidortcp.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="clienteservidortcp.ecore#//TiposPines">
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//TiposPines/Analogico"/>
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//TiposPines/Digital"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="clienteservidortcp.ecore#//ClienteServidor">
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//ClienteServidor/Cliente"/>
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//ClienteServidor/Servidor"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="clienteservidortcp.ecore#//TipoPuerto">
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//TipoPuerto/Serial"/>
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//TipoPuerto/Ethernet"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="clienteservidortcp.ecore#//TipoPerifericos">
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//TipoPerifericos/Analogico"/>
+      <genEnumLiterals ecoreEnumLiteral="clienteservidortcp.ecore#//TipoPerifericos/Digital"/>
+    </genEnums>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Arquitectura">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Arquitectura/computadora"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Arquitectura/tarjetadesarrollo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Arquitectura/perifericos"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Arquitectura/puertos"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Arquitectura/Nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Computadora">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Computadora/Tipo"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Computadora/interfaz"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Computadora/com"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Computadora/tcp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Computadora/puertos"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//TarjetaDesarrollo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//TarjetaDesarrollo/Nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//TarjetaDesarrollo/VelocidadT"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//TarjetaDesarrollo/pines"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//TarjetaDesarrollo/puertos"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Perifericos">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Perifericos/Nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Perifericos/Tipo"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Puertos">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Puertos/Nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Puertos/Tipo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Puertos/puertos"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Pines">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Pines/Numero"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Pines/Tipo"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Entrada">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Entrada/sensores"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Salida">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Salida/actuadores"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Interfaz">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference clienteservidortcp.ecore#//Interfaz/elementos"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//TCP">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//TCP/Puerto"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//TCP/IP"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//TCP/Dato"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//COM">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//COM/Nombre"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//COM/Dato"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Elementos">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute clienteservidortcp.ecore#//Elementos/Nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Actuadores"/>
+    <genClasses ecoreClass="clienteservidortcp.ecore#//Sensores"/>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="clienteservidortcp" nsURI="http://www.example.org/clienteservidortcp"
+    nsPrefix="clienteservidortcp">
+  <eClassifiers xsi:type="ecore:EClass" name="Arquitectura">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="computadora" upperBound="-1"
+        eType="#//Computadora" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tarjetadesarrollo" upperBound="-1"
+        eType="#//TarjetaDesarrollo" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="perifericos" upperBound="-1"
+        eType="#//Perifericos" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="puertos" upperBound="-1"
+        eType="#//Puertos" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Computadora">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Tipo" eType="#//ClienteServidor"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interfaz" upperBound="-1"
+        eType="#//Interfaz" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="com" upperBound="-1" eType="#//COM"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="tcp" upperBound="-1" eType="#//TCP"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="puertos" upperBound="-1"
+        eType="#//Puertos"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TarjetaDesarrollo">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="VelocidadT" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="pines" upperBound="-1"
+        eType="#//Pines" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="puertos" upperBound="-1"
+        eType="#//Puertos"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Perifericos" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Tipo" eType="#//TipoPerifericos"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Puertos">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Tipo" eType="#//TipoPuerto"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="puertos" eType="#//Puertos"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Pines" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Numero" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Tipo" eType="#//TiposPines"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Entrada" eSuperTypes="#//Pines">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sensores" eType="#//Sensores"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Salida" eSuperTypes="#//Pines">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="actuadores" eType="#//Actuadores"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TiposPines">
+    <eLiterals name="Analogico"/>
+    <eLiterals name="Digital" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Interfaz">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementos" upperBound="-1"
+        eType="#//Elementos" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ClienteServidor">
+    <eLiterals name="Cliente"/>
+    <eLiterals name="Servidor" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TCP">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Puerto" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="IP" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Dato" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="COM">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Dato" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Elementos">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Nombre" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="TipoPuerto">
+    <eLiterals name="Serial"/>
+    <eLiterals name="Ethernet" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actuadores" eSuperTypes="#//Perifericos"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Sensores" eSuperTypes="#//Perifericos"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="TipoPerifericos">
+    <eLiterals name="Analogico"/>
+    <eLiterals name="Digital" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

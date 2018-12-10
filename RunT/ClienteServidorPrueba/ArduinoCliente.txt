@@ -1,0 +1,49 @@
+//tarjeta ArduinoCliente
+
+
+		#define BBB = D2;
+
+		#define Switch1 = D0;
+		#define Switch2 = D1;
+
+
+
+void setup(){
+Serial.begin(9600);
+		
+pinMode(BBB,OUTPUT);
+
+		
+pinMode(Switch1,INPUT);
+		
+pinMode(Switch2,INPUT);
+
+}
+void loop(){
+if(Serial.available()){
+if(Serial.read()=='ABBB'){
+digitalWrite(BBB,HIGH);
+}
+//
+if(Serial.read()=='BBBB'){
+digitalWrite(BBB,LOW);
+}
+//
+
+
+
+if(digitalRead(Switch1)==HIGH)
+Serial.write("ASwitch1");
+if(digitalRead(Switch2)==HIGH)
+Serial.write("ASwitch2");
+//
+if(digitalRead(Switch1)==LOW)
+Serial.write("BSwitch1");
+if(digitalRead(Switch2)==LOW)
+Serial.write("BSwitch2");
+//
+
+}
+
+}
+

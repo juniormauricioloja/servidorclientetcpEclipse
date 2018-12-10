@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:clienteservidortcp="http://www.example.org/clienteservidortcp" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_rpvfgPJLEeitmdMjtlN4gg" selectedViews="_cuhgkPJPEeitmdMjtlN4gg" version="12.0.0.201704271200">
+    <semanticResources>Ejemplo.clienteservidortcp</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_cuhgkPJPEeitmdMjtlN4gg">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_cyYF0PJPEeitmdMjtlN4gg" name="diagramaClienteServidorTCP" repPath="#_cyEj0PJPEeitmdMjtlN4gg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']"/>
+        <target xmi:type="clienteservidortcp:Arquitectura" href="Ejemplo.clienteservidortcp#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_i6f6qfJPEeitmdMjtlN4gg" name="diagramaClienteServidorTCP" repPath="#_i6f6oPJPEeitmdMjtlN4gg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']"/>
+        <target xmi:type="clienteservidortcp:Arquitectura" href="Ejemplo.clienteservidortcp#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_cyEj0PJPEeitmdMjtlN4gg" name="diagramaClienteServidorTCP">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_cyEj0fJPEeitmdMjtlN4gg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_cyEj0vJPEeitmdMjtlN4gg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_c0Xp4PJPEeitmdMjtlN4gg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_c0Xp4fJPEeitmdMjtlN4gg" type="Sirius" element="_cyEj0PJPEeitmdMjtlN4gg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_c1PMkPJPEeitmdMjtlN4gg" type="2001" element="_cyEj1PJPEeitmdMjtlN4gg">
+          <children xmi:type="notation:Node" xmi:id="_c1568PJPEeitmdMjtlN4gg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_c1568fJPEeitmdMjtlN4gg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_c3nLIPJPEeitmdMjtlN4gg" type="3005" element="_cyEj1fJPEeitmdMjtlN4gg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_c3nLIfJPEeitmdMjtlN4gg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c3nLIvJPEeitmdMjtlN4gg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_c1PMkfJPEeitmdMjtlN4gg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c1PMkvJPEeitmdMjtlN4gg" width="1800" height="1183"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_c3hEgPJPEeitmdMjtlN4gg" type="2001" element="_cyEj1vJPEeitmdMjtlN4gg">
+          <children xmi:type="notation:Node" xmi:id="_c3iSoPJPEeitmdMjtlN4gg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_c3iSofJPEeitmdMjtlN4gg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_c3nLI_JPEeitmdMjtlN4gg" type="3005" element="_cyEj1_JPEeitmdMjtlN4gg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_c3nLJPJPEeitmdMjtlN4gg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c3nLJfJPEeitmdMjtlN4gg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_c3hEgfJPEeitmdMjtlN4gg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c3hEgvJPEeitmdMjtlN4gg" width="1800" height="1183"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_c0Xp4vJPEeitmdMjtlN4gg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_cyEj1PJPEeitmdMjtlN4gg" name="Invalid feature as name" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.0"/>
+      <semanticElements xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.0"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_cyEj1fJPEeitmdMjtlN4gg" labelPosition="node" workspacePath="/clienteservidortcp.project.design/Iconos/arduinouno.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_cyEj1vJPEeitmdMjtlN4gg" name="Invalid feature as name" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.1"/>
+      <semanticElements xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.1"/>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_cyEj1_JPEeitmdMjtlN4gg" labelPosition="node" workspacePath="/clienteservidortcp.project.design/Iconos/arduinouno.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_cyEj2PJPEeitmdMjtlN4gg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer"/>
+    <target xmi:type="clienteservidortcp:Arquitectura" href="Ejemplo.clienteservidortcp#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_i6f6oPJPEeitmdMjtlN4gg" name="diagramaClienteServidorTCP">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_i6f6ofJPEeitmdMjtlN4gg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_i6f6ovJPEeitmdMjtlN4gg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_i7lfwPJPEeitmdMjtlN4gg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_i7lfwfJPEeitmdMjtlN4gg" type="Sirius" element="_i6f6oPJPEeitmdMjtlN4gg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_i7lfw_JPEeitmdMjtlN4gg" type="2001" element="_i6f6pPJPEeitmdMjtlN4gg">
+          <children xmi:type="notation:Node" xmi:id="_i7mt4PJPEeitmdMjtlN4gg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_i7mt4fJPEeitmdMjtlN4gg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_i7mt5_JPEeitmdMjtlN4gg" type="3005" element="_i6f6pfJPEeitmdMjtlN4gg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_i7mt6PJPEeitmdMjtlN4gg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i7mt6fJPEeitmdMjtlN4gg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_i7lfxPJPEeitmdMjtlN4gg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i7lfxfJPEeitmdMjtlN4gg" x="280" y="1630" width="1800" height="1183"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_i7mt4vJPEeitmdMjtlN4gg" type="2001" element="_i6f6pvJPEeitmdMjtlN4gg">
+          <children xmi:type="notation:Node" xmi:id="_i7mt5fJPEeitmdMjtlN4gg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_i7mt5vJPEeitmdMjtlN4gg" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_i7mt6vJPEeitmdMjtlN4gg" type="3005" element="_i6f6p_JPEeitmdMjtlN4gg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_i7mt6_JPEeitmdMjtlN4gg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i7mt7PJPEeitmdMjtlN4gg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_i7mt4_JPEeitmdMjtlN4gg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_i7mt5PJPEeitmdMjtlN4gg" x="2770" y="1600" width="1800" height="1183"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_i7lfwvJPEeitmdMjtlN4gg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_i6f6pPJPEeitmdMjtlN4gg" name="ArduinoCliente" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.0"/>
+      <semanticElements xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_i6f6pfJPEeitmdMjtlN4gg" labelSize="15" showIcon="false" workspacePath="/clienteservidortcp.project.design/Iconos/arduinouno.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_i6f6pvJPEeitmdMjtlN4gg" name="ArduinoServidor" width="-1" height="-1" resizeKind="NSEW">
+      <target xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.1"/>
+      <semanticElements xmi:type="clienteservidortcp:TarjetaDesarrollo" href="Ejemplo.clienteservidortcp#//@tarjetadesarrollo.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_i6f6p_JPEeitmdMjtlN4gg" labelSize="15" showIcon="false" workspacePath="/clienteservidortcp.project.design/Iconos/arduinouno.jpg">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer/@nodeMappings[name='nodoTarjetaDesarrollo']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_i6f6qPJPEeitmdMjtlN4gg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/clienteservidortcp.project.design/description/project.odesign#//@ownedViewpoints[name='clienteservidortcpviewpoint']/@ownedRepresentations[name='diagramaClienteServidorTCP']/@defaultLayer"/>
+    <target xmi:type="clienteservidortcp:Arquitectura" href="Ejemplo.clienteservidortcp#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

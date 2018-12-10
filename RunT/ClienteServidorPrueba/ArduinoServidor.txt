@@ -1,0 +1,51 @@
+//tarjeta ArduinoServidor
+
+
+		#define Led1 = D0;
+		#define Led2 = D1;
+
+		#define AAA = D2;
+
+
+
+void setup(){
+Serial.begin(11520);
+		
+pinMode(Led1,OUTPUT);
+		
+pinMode(Led2,OUTPUT);
+
+		
+pinMode(AAA,INPUT);
+
+}
+void loop(){
+if(Serial.available()){
+if(Serial.read()=='ALed1'){
+digitalWrite(Led1,HIGH);
+}
+if(Serial.read()=='ALed2'){
+digitalWrite(Led2,HIGH);
+}
+//
+if(Serial.read()=='BLed1'){
+digitalWrite(Led1,LOW);
+}
+if(Serial.read()=='BLed2'){
+digitalWrite(Led2,LOW);
+}
+//
+
+
+
+if(digitalRead(AAA)==HIGH)
+Serial.write("AAAA");
+//
+if(digitalRead(AAA)==LOW)
+Serial.write("BAAA");
+//
+
+}
+
+}
+

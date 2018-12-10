@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="clienteservidortcpviewpoint" modelFileExtension="clienteservidortcp">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="diagramaClienteServidorTCP" initialisation="true" domainClass="clienteservidortcp.Arquitectura" enablePopupBars="true">
+      <metamodel href="http://www.example.org/clienteservidortcp#/"/>
+      <defaultLayer name="capaArquitectura">
+        <nodeMappings name="nodoTarjetaDesarrollo" semanticCandidatesExpression="[tarjetadesarrollo/]" domainClass="clienteservidortcp.TarjetaDesarrollo">
+          <style xsi:type="style:WorkspaceImageDescription" labelSize="15" showIcon="false" labelExpression="feature:Nombre" sizeComputationExpression="-1" resizeKind="NSEW" workspacePath="/clienteservidortcp.project.design/Iconos/arduinouno.jpg">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          </style>
+        </nodeMappings>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="clienteservidortcp.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

@@ -1,0 +1,71 @@
+[comment encoding = UTF-8 /]
+[module generador('http://www.example.org/clienteservidortcp')]
+
+
+[template public generateElement(anArquitectura : Arquitectura)]
+[comment @main/]
+
+[for (tarjetas : TarjetaDesarrollo | anArquitectura.tarjetadesarrollo)]
+	[file (tarjetas.Nombre.concat('.txt'), false )]
+//tarjeta [tarjetas.Nombre/]
+
+
+	[for (it1 : Salida  | tarjetas.pines)]
+		#define [it1.actuadores.Nombre/] = D[it1.Numero/];
+	[/for]
+
+	[for (it1 : Entrada  | tarjetas.pines)]
+		#define [it1.sensores.Nombre/] = D[it1.Numero/];
+	[/for ]
+
+
+
+void setup(){
+Serial.begin([tarjetas.VelocidadT/]);
+[for (it1 : Salida  | tarjetas.pines)]
+		
+pinMode([it1.actuadores.Nombre/],OUTPUT);
+	[/for ]
+
+[for (it1 : Entrada  | tarjetas.pines)]
+		
+pinMode([it1.sensores.Nombre/],INPUT);
+	[/for ]
+
+}
+void loop(){
+if(Serial.available()){
+[for (it1 : Salida  | tarjetas.pines)]
+if(Serial.read()=='A[it1.actuadores.Nombre/]'){
+digitalWrite([it1.actuadores.Nombre/],HIGH);
+}
+	[/for ]
+//
+[for (it1 : Salida  | tarjetas.pines)]
+if(Serial.read()=='B[it1.actuadores.Nombre/]'){
+digitalWrite([it1.actuadores.Nombre/],LOW);
+}
+	[/for ]
+//
+
+
+
+[for (it1 : Entrada  | tarjetas.pines)]
+if(digitalRead([it1.sensores.Nombre/])==HIGH)
+Serial.write("A[it1.sensores.Nombre/]");
+	[/for ]
+//
+[for (it1 : Entrada  | tarjetas.pines)]
+if(digitalRead([it1.sensores.Nombre/])==LOW)
+Serial.write("B[it1.sensores.Nombre/]");
+	[/for ]
+//
+
+}
+
+}
+
+	[/file]
+[/for]
+
+[/template]
